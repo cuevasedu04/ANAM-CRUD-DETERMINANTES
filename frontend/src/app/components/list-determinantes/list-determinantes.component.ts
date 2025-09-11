@@ -3,7 +3,6 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 import { Determinante } from '../../interface/determinante';
-import { DATE_PIPE_DEFAULT_TIMEZONE } from '@angular/common';
 
 
 
@@ -27,6 +26,6 @@ const listDeterminante: Determinante[] = [
 })
 
 export class ListDeterminantesComponent {
-  displayedColumns: string[] = ['ID', 'Nivel', 'Unidad de Negocio', 'Unidad Administrativa', 'Area', 'Determinante', 'Dependencia', 'Fecha de Registro', 'Fecha de Modificacion', 'ID Usuario Modifica', 'ID Usuario Creacion', 'Activo'];
+  displayedColumns: string[] = ['id, nivel'];
   dataSource = listDeterminante;
 }
