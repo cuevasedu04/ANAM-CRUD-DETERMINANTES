@@ -11,4 +11,5 @@ export interface Determinante {
     idUsuarioModifica?: number;
     idUsuarioCreacion?: number;
     activo?: boolean;
+    acciones: string;
 }
